@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1-MergeSort_BinarySearch.cpp">
+    <ClCompile Include="2-HeapSort_PriorQueue.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
