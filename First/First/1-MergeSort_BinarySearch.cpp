@@ -12,7 +12,7 @@ void print_v(const vector<int> S) {
 }
 
 void MERGE(vector<int> &S, int start, int mid, int end) {
-//½«s·ÖÎªÁ½²¿·Ö£¬²¢´æÈëĞÂµÄ×Ö·û´®,¼ÓÈëÉÚ±ø
+//å°†såˆ†ä¸ºä¸¤éƒ¨åˆ†ï¼Œå¹¶å­˜å…¥æ–°çš„å­—ç¬¦ä¸²,åŠ å…¥å“¨å…µ
 	vector<int> left_str, right_str;
 	for (int i = start; i <= mid; i++) {
 		left_str.push_back(S[i]);
@@ -22,7 +22,7 @@ void MERGE(vector<int> &S, int start, int mid, int end) {
 		right_str.push_back(S[i]);
 	}
 	right_str.push_back(MAX_NUM);
-//°´ÕÕ´óĞ¡ºÏ²¢µ½Ô­À´µÄÊı×Ö¼¯ÖĞ
+//æŒ‰ç…§å¤§å°åˆå¹¶åˆ°åŸæ¥çš„æ•°å­—é›†ä¸­
 	int left_key =0, right_key = 0;
 	for (int i = start; i <= end; i++) {
 		if (left_str[left_key] <= right_str[right_key]) {
@@ -63,7 +63,7 @@ int BINARY_SEARCH(const vector<int> S,int x,int start,int end) {
 int main(void) {
 	vector<int> S;
 	int x = 0,j=0;
-	cout << "ÊäÈëÕûÊı¼¯ºÏÓëx" << endl;
+	cout << "è¾“å…¥æ•´æ•°é›†åˆä¸x" << endl;
 	while (cin >> x) {
 		S.push_back(x);
 	}
@@ -76,7 +76,7 @@ int main(void) {
 		cout << x - S[i] << ends << i << ends << S.size() - 1<<endl;
 		j = BINARY_SEARCH(S, x - S[i], i, S.size() - 1);
 		if (j!=-1) {
-			cout << "´æÔÚÕûÊı¶Ô" << S[i] << "ºÍ" << S[j] << "¿ÉÒÔ×é³Éx:" << x << endl;
+			cout << "å­˜åœ¨æ•´æ•°å¯¹" << S[i] << "å’Œ" << S[j] << "å¯ä»¥ç»„æˆx:" << x << endl;
 		}
 	}
 	print_v(S);
