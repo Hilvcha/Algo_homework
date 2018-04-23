@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{9912C280-D66C-4D7D-9AAB-26C7F5EAD14A}</ProjectGuid>
+    <ProjectGuid>{11AB313F-8EB1-4E07-881F-4B085E7BBE36}</ProjectGuid>
     <RootNamespace>Second</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -111,7 +111,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="2-HeapSort_PriorQueue.cpp" />
+    <ClCompile Include="1-MATRIX-CHAN.cpp" />
+    <ClCompile Include="2-LCS.cpp" />
+    <ClCompile Include="3- Longest-Common-Substring.cpp" />
+    <ClCompile Include="4-MAX-SUM.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

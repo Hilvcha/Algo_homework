@@ -18,5 +18,14 @@
     <ClCompile Include="1-MergeSort_BinarySearch.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="2-HeapSort_PriorQueue.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="3-QuickSort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="4-TopKinTwoSortedArry.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

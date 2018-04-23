@@ -112,6 +112,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="1-MergeSort_BinarySearch.cpp" />
+    <ClCompile Include="2-HeapSort_PriorQueue.cpp" />
+    <ClCompile Include="3-QuickSort.cpp" />
+    <ClCompile Include="4-TopKinTwoSortedArry.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
