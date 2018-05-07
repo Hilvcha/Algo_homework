@@ -27,5 +27,8 @@
     <ClCompile Include="2-LCS.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="5-Shortest-Path.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -263,3 +263,5 @@ __pycache__/
 *.sln
 Debug/
 *.vcxproj
+First/Second/Second.vcxproj
+First/Second/Second.vcxproj.filters

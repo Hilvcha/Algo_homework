@@ -115,6 +115,7 @@
     <ClCompile Include="2-LCS.cpp" />
     <ClCompile Include="3- Longest-Common-Substring.cpp" />
     <ClCompile Include="4-MAX-SUM.cpp" />
+    <ClCompile Include="5-Shortest-Path.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
