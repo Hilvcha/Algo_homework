@@ -18,9 +18,9 @@ int MAX_SUM(vector<int> a) {
 	}
 	return max;
 }
-int main4(void) {
+int main(void) {
 	vector<int> a = { -2,11, -4,13, -5, -2 };
 	cout << MAX_SUM(a) << endl;
-	system("pause");
+//	system("pause");
 	return 0;
 }

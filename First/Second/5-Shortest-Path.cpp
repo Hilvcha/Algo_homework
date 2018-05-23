@@ -65,25 +65,25 @@ int CreateUDN(MGraph &G) {
 	//	G.arcs[i][j].adj = w;
 
 	//}
-	G.arcs[0][1].adj = 5;	G.arcs[0][2].adj = 3;	  
-    G.arcs[1][0].adj = 5;	G.arcs[1][3].adj = 1;	G.arcs[1][4].adj = 3;	G.arcs[1][5].adj = 6;  
-    G.arcs[2][0].adj = 3;	G.arcs[2][4].adj = 8;	G.arcs[2][5].adj = 7;	G.arcs[2][6].adj = 6;     
-    G.arcs[3][1].adj = 1;	G.arcs[3][7].adj = 6;	G.arcs[3][8].adj = 8;	  
-    G.arcs[4][1].adj = 3;	G.arcs[4][7].adj = 3;	G.arcs[4][8].adj = 5;	  
-    G.arcs[5][1].adj = 5;	G.arcs[5][2].adj = 7;	G.arcs[5][8].adj = 3;	G.arcs[5][9].adj = 3;  
-    G.arcs[6][2].adj = 6;	G.arcs[6][8].adj = 8;	G.arcs[6][9].adj = 4;	  
-    G.arcs[7][3].adj = 6;	G.arcs[7][4].adj = 3;	G.arcs[7][10].adj = 2;	G.arcs[7][11].adj = 2;  
-    G.arcs[8][3].adj = 8;	G.arcs[8][4].adj = 5;	G.arcs[8][5].adj = 3;	G.arcs[8][6].adj = 3;	G.arcs[8][11].adj = 1;	G.arcs[8][12].adj = 2;  
-    G.arcs[9][5].adj = 3;	G.arcs[9][6].adj = 4;	G.arcs[9][11].adj = 3;	G.arcs[9][12].adj = 3;  
-    G.arcs[10][7].adj = 2;	G.arcs[10][13].adj =3;	G.arcs[10][14].adj = 5;  
-    G.arcs[11][7].adj = 2;	G.arcs[11][8].adj = 1;	G.arcs[11][9].adj = 3;	G.arcs[11][13].adj = 5;	G.arcs[11][14].adj = 2;  
-    G.arcs[12][8].adj = 2;	G.arcs[12][9].adj = 3;	G.arcs[12][13].adj =6;	G.arcs[12][14].adj = 6;  
-    G.arcs[13][10].adj =3;	G.arcs[13][11].adj =5;	G.arcs[13][12].adj =6;	G.arcs[13][15].adj = 4;  
-    G.arcs[14][10].adj =5;	G.arcs[14][11].adj =2;	G.arcs[14][12].adj =6;	G.arcs[14][15].adj = 3;  
-    G.arcs[15][13].adj =4;	G.arcs[15][14].adj =3;  
+	G.arcs[0][1].adj = 5;	G.arcs[0][2].adj = 3;
+    G.arcs[1][0].adj = 5;	G.arcs[1][3].adj = 1;	G.arcs[1][4].adj = 3;	G.arcs[1][5].adj = 6;
+    G.arcs[2][0].adj = 3;	G.arcs[2][4].adj = 8;	G.arcs[2][5].adj = 7;	G.arcs[2][6].adj = 6;
+    G.arcs[3][1].adj = 1;	G.arcs[3][7].adj = 6;	G.arcs[3][8].adj = 8;
+    G.arcs[4][1].adj = 3;	G.arcs[4][7].adj = 3;	G.arcs[4][8].adj = 5;
+    G.arcs[5][1].adj = 5;	G.arcs[5][2].adj = 7;	G.arcs[5][8].adj = 3;	G.arcs[5][9].adj = 3;
+    G.arcs[6][2].adj = 6;	G.arcs[6][8].adj = 8;	G.arcs[6][9].adj = 4;
+    G.arcs[7][3].adj = 6;	G.arcs[7][4].adj = 3;	G.arcs[7][10].adj = 2;	G.arcs[7][11].adj = 2;
+    G.arcs[8][3].adj = 8;	G.arcs[8][4].adj = 5;	G.arcs[8][5].adj = 3;	G.arcs[8][6].adj = 3;	G.arcs[8][11].adj = 1;	G.arcs[8][12].adj = 2;
+    G.arcs[9][5].adj = 3;	G.arcs[9][6].adj = 4;	G.arcs[9][11].adj = 3;	G.arcs[9][12].adj = 3;
+    G.arcs[10][7].adj = 2;	G.arcs[10][13].adj =3;	G.arcs[10][14].adj = 5;
+    G.arcs[11][7].adj = 2;	G.arcs[11][8].adj = 1;	G.arcs[11][9].adj = 3;	G.arcs[11][13].adj = 5;	G.arcs[11][14].adj = 2;
+    G.arcs[12][8].adj = 2;	G.arcs[12][9].adj = 3;	G.arcs[12][13].adj =6;	G.arcs[12][14].adj = 6;
+    G.arcs[13][10].adj =3;	G.arcs[13][11].adj =5;	G.arcs[13][12].adj =6;	G.arcs[13][15].adj = 4;
+    G.arcs[14][10].adj =5;	G.arcs[14][11].adj =2;	G.arcs[14][12].adj =6;	G.arcs[14][15].adj = 3;
+    G.arcs[15][13].adj =4;	G.arcs[15][14].adj =3;
 	return 0;
 }
-	
+
 void ShortestPath_DIJ(MGraph G, int V0, vector<int> &path,int target) {
 	typedef struct table
 	{
@@ -116,7 +116,7 @@ void ShortestPath_DIJ(MGraph G, int V0, vector<int> &path,int target) {
 		Q--;
 		for (int i = 0; i < G.vexn; i++) {
 			if (G.arcs[v][i].adj < INFINIFY) {
-				//relax v->i 
+				//relax v->i
 				if (G.arcs[v][i].adj + D[v].d < D[i].d) {
 					D[i].d = G.arcs[v][i].adj + D[v].d;
 					D[i].v = v;
@@ -131,7 +131,7 @@ void ShortestPath_DIJ(MGraph G, int V0, vector<int> &path,int target) {
 		path.push_back(i);
 		i = D[i].v;
 	}
-	
+
 	cout<<"The shortest path is:"<<endl << V0 << ends;
 	while (!path.empty()) {
 		cout << "->" << path.back() <<ends;
@@ -150,6 +150,9 @@ int main() {
 	vector<int> path;
 	ShortestPath_DIJ(G, v0, path, target);
 
-	system("pause");
+	//system("pause");
 	return 0;
 }
+
+
+

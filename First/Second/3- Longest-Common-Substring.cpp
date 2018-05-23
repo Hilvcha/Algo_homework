@@ -1,4 +1,4 @@
-//3го	Longest Common Substring.The following are some instances.
+//3я╝О	Longest Common Substring.The following are some instances.
 //a)	X: xzyzzyx   Y : zxyyzxz
 //b)	X:MAEEEVAKLEKHLMLLRQEYVKLQKKLAETEKRCALLAAQANKESSSESFISRLLAIVAD
 //Y : MAEEEVAKLEKHLMLLRQEYVKLQKKLAETEKRCTLLAAQANKENSNESFISRLLAIVAG
@@ -60,12 +60,12 @@ int LCS_LENGTH(const string x, const string y) {
 //	}
 //}
 
-int main3(void) {
+int main(void) {
 	string x[] = { "xzyzzyx","MAEEEVAKLEKHLMLLRQEYVKLQKKLAETEKRCALLAAQANKESSSESFISRLLAIVAD" };
 	string y[] = { "zxyyzxz","MAEEEVAKLEKHLMLLRQEYVKLQKKLAETEKRCTLLAAQANKENSNESFISRLLAIVAG" };
 	LCS_LENGTH(x[0], y[0]);
 
 	//display(x[0].length(), y[0].length(), x[0]);
-	system("pause");
+	//system("pause");
 	return 0;
 }
